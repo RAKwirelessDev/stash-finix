@@ -5,4 +5,4 @@ if (!empty($_POST['username']) && !empty($_POST['password'])) {
 }
 
 echo "hello";
-print_r($_COOKIE['_AUTH_ERROR_']);
+print_r($_COOKIE);

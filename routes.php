@@ -5,5 +5,8 @@ const _ROUTES_ = [
     '/signup/' => 'signup.php',
     '/reset/' => 'reset.php',
 
+    
+    '/unauthorized/' => 'error-401.php'
+    '/forbidden/' => 'error-403.php'
     '{PAGE_NOT_FOUND}' => 'error-404.php'
 ];

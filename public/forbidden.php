@@ -1,3 +1,3 @@
 <?php
 
-var_dump(http_response_code());
+echo $_GET['status'];

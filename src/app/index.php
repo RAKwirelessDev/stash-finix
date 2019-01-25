@@ -12,3 +12,5 @@ if (!empty($_COOKIE['_AUTH_ERROR_'])) {
         echo "ACCESS CREDENTIALS REQUIRED";
     }
 }
+
+setcookie('_AUTH_ERROR_', '', time()-3600, '/');

@@ -22,7 +22,7 @@
     
     <input class="btn" type="submit" value="Sign In">
 
-    <a href="/signup/"><div id="btn2">Sign Up</div></a>
+    <a href="/signup/"><div class="btn2">Sign Up</div></a>
     
     </div>
     

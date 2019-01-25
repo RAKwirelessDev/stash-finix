@@ -5,7 +5,7 @@
     <link href='/assets/css/stash.css' rel='stylesheet' type='text/css'>
 </head>
 <body>
-    <form method="post" action="index.html">
+    <form method="post">
     <div class="box">
     <h1>Stash Login</h1>
 
@@ -13,9 +13,9 @@
     
     <input type="password" name="email" value="email" onFocus="field_focus(this, 'email');" onblur="field_blur(this, 'email');" class="email" />
     
-    <a href="#"><div class="btn">Sign In</div></a> <!-- End Btn -->
+    <input type="submit" value="Sign In">
 
-    <a href="#"><div id="btn2">Sign Up</div></a> <!-- End Btn2 -->
+    <a href="#"><div id="btn2">Sign Up</div></a>
     
     </div> <!-- End Box -->
     

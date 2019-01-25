@@ -101,11 +101,15 @@ h1{
 .middle {
   display: table-cell;
   vertical-align: middle;
+  padding: 3% 0px 3% 0px;
 }
 
 .inner {
   margin-left: auto;
   margin-right: auto;
   width: 400px;
-  /*whatever width you want*/
+}
+
+.margin-bottom-zero{
+  margin-bottom:0px;
 }

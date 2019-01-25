@@ -33,7 +33,7 @@
     
     </form>
 
-    <p>Forgot your password? <a href="/reset/" style="color:#f1c40f;">Click Here!</a></p>
+    <p class="margin-bottom-zero">Forgot your password? <a href="/reset/" style="color:#f1c40f;">Click Here!</a></p>
 
 </div>
 </div>

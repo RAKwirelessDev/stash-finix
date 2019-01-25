@@ -25,9 +25,9 @@
     
     <input type="password" name="password" placeholder="Password" class="txt-input poppins">
     
-    <button class="btn" type="submit">Sign In</button>
+    <button class="btn poppins" type="submit">Sign In</button>
 
-    <a class="btn2" href="/signup/">Sign Up</a>
+    <a class="btn2 poppins" href="/signup/">Sign Up</a>
     
     </div>
     

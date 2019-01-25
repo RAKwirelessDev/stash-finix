@@ -12,6 +12,11 @@
 
 </head>
 <body>
+
+<div class="outer">
+<div class="middle">
+<div class="center">
+
     <form method="post">
     <div class="box">
     <h1>Stash Login</h1>
@@ -29,6 +34,10 @@
     </form>
 
     <p>Forgot your password? <a href="/reset/" style="color:#f1c40f;">Click Here!</a></p>
+
+</div>
+</div>
+</div>
     
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js" type="text/javascript"></script>
     <script src="/assets/js/stash.js" type="text/javascript"></script>

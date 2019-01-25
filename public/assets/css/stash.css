@@ -7,6 +7,10 @@ body{
   margin: 20px 0px 20px 0px;   
 }
 
+.poppins{
+  font-family: 'Poppins', sans-serif;
+}
+
 p{
   font-size:12px;
   text-decoration: none;

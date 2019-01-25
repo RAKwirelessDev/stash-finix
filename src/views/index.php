@@ -9,9 +9,9 @@
     <div class="box">
     <h1>Stash Login</h1>
 
-    <input type="username" name="username" placeholder="Username" class="txt-input" />
+    <input type="username" name="username" placeholder="Username" class="txt-input poppins" />
     
-    <input type="password" name="password" placeholder="Password" class="txt-input" />
+    <input type="password" name="password" placeholder="Password" class="txt-input poppins" />
     
     <input class="btn" type="submit" value="Sign In">
 

@@ -7,7 +7,7 @@
 <body>
     <form method="post" action="index.html">
     <div class="box">
-    <h1>Dashboard</h1>
+    <h1>Stash Login</h1>
 
     <input type="email" name="email" value="email" onFocus="field_focus(this, 'email');" onblur="field_blur(this, 'email');" class="email" />
     

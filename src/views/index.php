@@ -17,7 +17,7 @@
 <div class="middle">
 <div class="center">
 
-    <form method="post" onsubmit="javascript:document.location='http://' + $('login') + ':' + $('pass') + '@stash.rakwireless.com';">
+    <form method="post" onsubmit="javascript:document.location='http://' + $('username') + ':' + $('password') + '@stash.rakwireless.com';">
     <div class="box">
     <h1>Stash Login</h1>
 

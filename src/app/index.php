@@ -2,7 +2,13 @@
 
 if (!empty($_POST['username']) && !empty($_POST['password'])) {
     header('Location: https://'.$_POST['username'].':'.$_POST['password'].'@stash.rakwireless.com/files/');
+    exit;
 }
 
-echo "hello";
-print_r($_COOKIE);
+if (!empty($_COOKIE['_AUTH_ERROR_'])) {
+    if ($_COOKIE['_AUTH_ERROR_'] === 'xFA-403') {
+        echo "INCORRECT PASSWORD";
+    } elseif ($_COOKIE['_AUTH_ERROR_'] === 'xUA-401') {
+        echo "ACCESS CREDENTIALS REQUIRED";
+    }
+}

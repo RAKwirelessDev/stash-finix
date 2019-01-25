@@ -43,6 +43,11 @@ h1{
   border-radius:4px;
 }
 
+.mod{
+  padding-top: 6px;
+  padding-bottom: 5px;
+}
+
 .btn{
   float:left;
   background:#2ecc71;

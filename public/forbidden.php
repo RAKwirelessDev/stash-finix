@@ -1,3 +1,3 @@
 <?php
 
-echo "FORBIDDEN";
+print_r($_SERVER);

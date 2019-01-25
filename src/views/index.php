@@ -27,7 +27,7 @@
     
     <button class="btn" type="submit">Sign In</button>
 
-    <a href="/signup/"><button class="btn2">Sign Up</button></a>
+    <a class="btn2" href="/signup/">Sign Up</a>
     
     </div>
     

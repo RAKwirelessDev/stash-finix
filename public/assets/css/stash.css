@@ -43,11 +43,6 @@ h1{
   border-radius:4px;
 }
 
-.mod{
-  padding-top: 6px;
-  padding-bottom: 5px;
-}
-
 .btn{
   float:left;
   background:#2ecc71;
@@ -65,6 +60,10 @@ h1{
   margin-left:16px;
   font-weight:800;
   font-size:0.8em;
+
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
 }
 
 .btn:hover{
@@ -88,6 +87,10 @@ h1{
   margin-right:16px;
   font-weight:800;
   font-size:0.8em;
+
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
 }
 
 .btn2:hover{ 

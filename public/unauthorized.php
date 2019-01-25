@@ -5,4 +5,4 @@
 
 //echo "Unauthorized Access";
 
-echo $_SERVER['PHP_AUTH_USER'];
+print_r($_SERVER);

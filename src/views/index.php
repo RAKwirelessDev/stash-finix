@@ -2,6 +2,7 @@
 <head>
     <title>Stash Login</title>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:700,600' rel='stylesheet' type='text/css'>
+    <link href='/assets/css/stash.css' rel='stylesheet' type='text/css'>
 </head>
 <body>
     <form method="post" action="index.html">

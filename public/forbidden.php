@@ -1,3 +1,3 @@
 <?php
 
-print_r($_SERVER);
+var_dump(http_response_code());

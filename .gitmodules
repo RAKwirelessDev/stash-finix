@@ -1,3 +1,3 @@
-[submodule "public/assets"]
+[submodule "public/files/_finix"]
 	path = public/files/_finix
 	url = https://github.com/RAKWirelessDev/finix.git

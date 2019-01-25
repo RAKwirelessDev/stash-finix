@@ -1,7 +1,7 @@
 <html>
 <head>
     <title>Stash Login</title>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:700,600' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700' rel='stylesheet' type='text/css'>
     <link href='/assets/css/stash.css' rel='stylesheet' type='text/css'>
 </head>
 <body>
@@ -9,9 +9,9 @@
     <div class="box">
     <h1>Stash Login</h1>
 
-    <input type="username" name="username" placeholder="username" class="txt-input" />
+    <input type="username" name="username" placeholder="Username" class="txt-input" />
     
-    <input type="password" name="password" placeholder="password" class="txt-input" />
+    <input type="password" name="password" placeholder="Password" class="txt-input" />
     
     <input class="btn" type="submit" value="Sign In">
 

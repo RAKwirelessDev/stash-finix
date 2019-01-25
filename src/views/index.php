@@ -13,9 +13,11 @@
     
     <input type="password" name="email" value="email" onFocus="field_focus(this, 'email');" onblur="field_blur(this, 'email');" class="email" />
     
-    <input type="submit" value="Sign In">
+    <input class="btn" type="submit" value="Sign In">
+    
+    <!-- <a href="#"><div class="btn">Sign In</div></a> End Btn -->
 
-    <a href="#"><div id="btn2">Sign Up</div></a>
+    <a href="#"><div id="btn2">Sign Up</div></a> <!-- End Btn2 -->
     
     </div> <!-- End Box -->
     

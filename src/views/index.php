@@ -14,16 +14,14 @@
     <input type="password" name="email" value="email" onFocus="field_focus(this, 'email');" onblur="field_blur(this, 'email');" class="email" />
     
     <input class="btn" type="submit" value="Sign In">
-    
-    <!-- <a href="#"><div class="btn">Sign In</div></a> End Btn -->
 
-    <a href="#"><div id="btn2">Sign Up</div></a> <!-- End Btn2 -->
+    <a href="/signup/"><div id="btn2">Sign Up</div></a>
     
-    </div> <!-- End Box -->
+    </div>
     
     </form>
 
-    <p>Forgot your password? <u style="color:#f1c40f;">Click Here!</u></p>
+    <p>Forgot your password? <a href="/reset/" style="color:#f1c40f;">Click Here!</a></p>
     
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js" type="text/javascript"></script>
     <script src="/assets/js/stash.js" type="text/javascript"></script>

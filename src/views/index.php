@@ -9,9 +9,9 @@
     <div class="box">
     <h1>Stash Login</h1>
 
-    <input type="email" name="email" value="email" onFocus="field_focus(this, 'email');" onblur="field_blur(this, 'email');" class="email" />
+    <input type="username" name="username" placeholder="username" class="txt-input" />
     
-    <input type="password" name="email" value="email" onFocus="field_focus(this, 'email');" onblur="field_blur(this, 'email');" class="email" />
+    <input type="password" name="password" placeholder="password" class="txt-input" />
     
     <input class="btn" type="submit" value="Sign In">
 

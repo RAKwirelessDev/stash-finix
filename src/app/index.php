@@ -6,10 +6,8 @@ if (!empty($_POST['username']) && !empty($_POST['password'])) {
 }
 
 if (!empty($_COOKIE['_AUTH_ERROR_'])) {
-    if ($_COOKIE['_AUTH_ERROR_'] === 'xFA-403') {
-        echo "INCORRECT PASSWORD";
-    } elseif ($_COOKIE['_AUTH_ERROR_'] === 'xUA-401') {
-        echo "ACCESS CREDENTIALS REQUIRED";
+    if ($_COOKIE['_AUTH_ERROR_'] === 'xUA') {
+        echo "Unauthorized Access";
     }
 }
 

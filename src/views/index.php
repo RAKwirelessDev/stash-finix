@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <title>Stash Login</title>
     <link href='//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700' rel='stylesheet' type='text/css'>
@@ -6,15 +7,18 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#3498db">
+    
+
 </head>
 <body>
     <form method="post">
     <div class="box">
     <h1>Stash Login</h1>
 
-    <input type="username" name="username" placeholder="Username" class="txt-input poppins" />
+    <input type="username" name="username" placeholder="Username" class="txt-input poppins">
     
-    <input type="password" name="password" placeholder="Password" class="txt-input poppins" />
+    <input type="password" name="password" placeholder="Password" class="txt-input poppins">
     
     <input class="btn" type="submit" value="Sign In">
 

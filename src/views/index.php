@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Stash Sign In -  RAK Wireless</title>
+    <title>Stash Sign In - RAK Wireless</title>
     <link href='//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700' rel='stylesheet' type='text/css'>
     <link href='/assets/css/stash.css' rel='stylesheet' type='text/css'>
 
@@ -24,7 +24,7 @@
     <p style="background-color: #18374c;margin-top: 0px;padding: 10px;">Authentication Failed</p>
     <?php endif; ?>
 
-    <h1>Stash Sign In</h1>
+    <h1>Sign In</h1>
 
     <input type="email" name="email" placeholder="Email Address" required="true" class="txt-input poppins">
     

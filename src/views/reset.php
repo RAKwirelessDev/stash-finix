@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Stash Login -  RAK Wireless</title>
+    <title>Stash Password Reset - RAK Wireless</title>
     <link href='//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700' rel='stylesheet' type='text/css'>
     <link href='/assets/css/stash.css' rel='stylesheet' type='text/css'>
 
@@ -19,21 +19,23 @@
 
     <form method="post">
     <div class="box">
-    <h1>Stash Login</h1>
+    
+    <?php if (isset($xua) && $xua === true): ?>
+    <p style="background-color: #18374c;margin-top: 0px;padding: 10px;">Authentication Failed</p>
+    <?php endif; ?>
 
-    <input type="username" name="username" placeholder="Username" class="txt-input poppins">
-    
-    <input type="password" name="password" placeholder="Password" class="txt-input poppins">
-    
-    <button class="btn poppins" type="submit">Sign In</button>
+    <h1>Password Reset</h1>
 
-    <a class="btn2 poppins" href="/signup/">Sign Up</a>
+    <input type="email" name="email" placeholder="Email Address" required="true" class="txt-input poppins">
     
+    <div class="btn-group">
+        <button class="btn poppins" type="submit">Reset</button>
+    </div>
     </div>
     
     </form>
 
-    <p class="margin-bottom-zero">Forgot your password? <a href="/reset/" style="color:#f1c40f;">Click Here!</a></p>
+    <p class="margin-bottom-zero">Want an invitation code?<br><a href="#" style="color:#f1c40f;">Contact us!</a></p>
 
 </div>
 </div>

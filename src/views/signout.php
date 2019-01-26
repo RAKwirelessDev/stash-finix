@@ -28,7 +28,7 @@
                     xmlhttp.setRequestHeader("Authorization", "Basic sign-out");
                     xmlhttp.send();
                 } else {
-                    alert("Logging out automatically is unsupported for " + bowser.name
+                    alert("Session ending is not supported for " + bowser.name
                         + "\nYou must close the browser to log out.");
                 }
                 setTimeout(function () {

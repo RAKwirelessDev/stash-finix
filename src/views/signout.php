@@ -32,7 +32,7 @@
                         + "\nYou must close the browser to log out.");
                 }
                 setTimeout(function () {
-                    window.location.href = redirUrl;
+                    //window.location.href = redirUrl;
                 }, 200);
             }
         </script>

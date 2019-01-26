@@ -2,8 +2,6 @@
 
 if ($_COOKIE['_AUTH_ERROR_'] !== 'sSO') {
     setcookie('_AUTH_ERROR_', 'xAF', time()+10, '/');
-} else {
-    setcookie('_AUTH_ERROR_', 'sSO', time()+10, '/');
 }
 
 ?>

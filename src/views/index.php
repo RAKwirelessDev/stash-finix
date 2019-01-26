@@ -26,9 +26,9 @@
 
     <h1>Stash Sign In</h1>
 
-    <input type="email" name="email" placeholder="Email Address" class="txt-input poppins">
+    <input type="email" name="email" placeholder="Email Address" required="true" class="txt-input poppins">
     
-    <input type="password" name="password" placeholder="Password" class="txt-input poppins">
+    <input type="password" name="password" placeholder="Password" required="true" class="txt-input poppins">
     
     <div class="btn-group">
         <button class="btn poppins m-8right" type="submit">Sign In</button>

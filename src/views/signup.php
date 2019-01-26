@@ -26,11 +26,11 @@
 
     <h1>Stash Sign Up</h1>
 
-    <input type="text" name="invitation" placeholder="Invitation Code" class="txt-input poppins">
-    <input type="email" name="email" placeholder="Email Address" class="txt-input poppins">
+    <input type="text" name="invitation" placeholder="Invitation Code" required="true" class="txt-input poppins">
+    <input type="email" name="email" placeholder="Email Address" required="true" class="txt-input poppins">
     
-    <input type="password" name="password" placeholder="Password" class="txt-input poppins">
-    <input type="password" name="password-confirm" placeholder="Confirm Password" class="txt-input poppins">
+    <input type="password" name="password" placeholder="Password" required="true" class="txt-input poppins">
+    <input type="password" name="password-confirm" placeholder="Confirm Password" required="true" class="txt-input poppins">
     
     <div class="btn-group">
         <button class="btn poppins" type="submit">Sign Up</button>

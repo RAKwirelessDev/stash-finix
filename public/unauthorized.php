@@ -1,6 +1,6 @@
 <?php
 
-setcookie('_AUTH_ERROR_', 'xUA', time()+10, '/');
+setcookie('_AUTH_ERROR_', 'xAF', time()+10, '/');
 
 ?>
 <!DOCTYPE html>

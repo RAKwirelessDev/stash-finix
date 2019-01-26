@@ -45,6 +45,7 @@
 </div>
     
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js" type="text/javascript"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/bowser/1.9.4/bowser.min.js" type="text/javascript"></script>
     <script src="/assets/js/stash.js" type="text/javascript"></script>
 </body>
 </html>

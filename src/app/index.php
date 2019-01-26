@@ -15,7 +15,7 @@ if (!empty($username) && !empty($password)) {
 
 if (!empty($_COOKIE['_AUTH_ERROR_'])) {
     if ($_COOKIE['_AUTH_ERROR_'] === 'xAF') {
-        $xua = [true, 'Authentication Failed'];
+        $xua = [true, 'Basic Authentication Failed'];
     } elseif ($_COOKIE['_AUTH_ERROR_'] === 'sAG') {
         header('Location: /files/');
         exit;

@@ -9,7 +9,7 @@
             document.onload = basic_auth_sign_out("https://stash.rakwireless.com/files/", "https://stash.rakwireless.com/");
 
             var d = new Date();
-            d.setTime(d.getTime() + 10);
+            d.setTime(d.getTime() + 60);
             document.cookie = "_AUTH_ERROR_=sSO; expires=" + d.toUTCString() + "; path=/";
 
             function basic_auth_sign_out(secUrl, redirUrl) {

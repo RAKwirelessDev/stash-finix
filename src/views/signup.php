@@ -33,7 +33,7 @@
     <input type="password" name="password-confirm" placeholder="Confirm Password" class="txt-input poppins">
     
     <div class="btn-group">
-        <button class="btn poppins m-8right" type="submit">Sign In</button>
+        <button class="btn poppins" type="submit">Sign In</button>
     </div>
     </div>
     

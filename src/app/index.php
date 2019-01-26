@@ -6,16 +6,10 @@ $password = $_POST['password'];
 if (!empty($username) && !empty($password)) {
     $basic_auth->delete_user('admin', 'admin');
     $basic_auth->add_user('aspaciop@rakwireless.com', 'admin');
-    if (strpos($_SERVER['HTTP_USER_AGENT'], 'MSIE') !== FALSE ||
-            strpos($_SERVER['HTTP_USER_AGENT'], 'Trident') !== FALSE ||
-            strpos($_SERVER['HTTP_USER_AGENT'], 'EdgeHTML') !== FALSE) {
-        $xom = [true, 'Unsupported Browser'];
+    if ($basic_auth->login_test($username, $password)) {
+        header('Location: https://'.$username.':'.$password.'@'.$_SERVER['HTTP_HOST'].'/files/');
     } else {
-        if ($basic_auth->login_test($username, $password)) {
-            header('Location: https://'.$username.':'.$password.'@'.$_SERVER['HTTP_HOST'].'/files/');
-        } else {
-            $xom = [true, 'Authentication Failed'];
-        }
+        $xom = [true, 'Authentication Failed'];
     }
 }
 

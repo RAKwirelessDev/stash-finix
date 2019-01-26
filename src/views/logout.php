@@ -7,7 +7,7 @@
     function basic_auth_logout(secUrl, redirUrl) {
     if (bowser.msie) {
         document.execCommand('ClearAuthenticationCache', 'false');
-    } else if (bowser.gecko) {
+    } else if (bowser.gecko || bowser.blink) {
         $.ajax({
             async: false,
             url: secUrl,

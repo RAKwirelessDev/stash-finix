@@ -7,3 +7,4 @@ require_once('../src/classes/autoload.php');
 $url_path = Core\Commons::url_path();
 $router = new Core\Router(_ROUTES_);
 $router->fetch($url_path);
+$basic_auth = new Core\BasicAuth('../.htpasswd', true);

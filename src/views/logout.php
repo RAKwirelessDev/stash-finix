@@ -1,6 +1,7 @@
 <html>
     <head><title>Sign Out</title></head>
     <body>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js" type="text/javascript"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/bowser/1.9.4/bowser.min.js" type="text/javascript"></script>
     <script>
     document.onload = basic_auth_logout("https://stash.rakwireless.com/files/", "https://stash.rakwireless.com/");

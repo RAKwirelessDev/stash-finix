@@ -20,17 +20,17 @@
     <form method="post">
     <div class="box">
     
-    <?php if (isset($xua) && $xua === true): ?>
-    <p style="background-color: #18374c;margin-top: 0px;padding: 10px;">Authentication Failed</p>
+    <?php if (isset($xua) && $xua[0] === true): ?>
+    <p style="background-color: #18374c;margin-top: 0px;padding: 10px;"><?=$xua[1];?></p>
     <?php endif; ?>
 
     <h1>Sign Up</h1>
 
-    <input type="text" name="invitation" placeholder="Invitation Code" required="true" class="txt-input poppins">
+    <input type="text" name="invitation_code" placeholder="Invitation Code" required="true" class="txt-input poppins">
     <input type="email" name="email" placeholder="Email Address" required="true" class="txt-input poppins">
     
     <input type="password" name="password" placeholder="Password" required="true" class="txt-input poppins">
-    <input type="password" name="password-confirm" placeholder="Confirm Password" required="true" class="txt-input poppins">
+    <input type="password" name="password_confirm" placeholder="Confirm Password" required="true" class="txt-input poppins">
     
     <div class="btn-group">
         <button class="btn poppins m-8right" type="submit">Sign Up</button>

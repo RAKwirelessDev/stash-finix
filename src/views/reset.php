@@ -20,8 +20,8 @@
     <form method="post">
     <div class="box">
     
-    <?php if (isset($xua) && $xua === true): ?>
-    <p style="background-color: #18374c;margin-top: 0px;padding: 10px;">Authentication Failed</p>
+    <?php if (isset($xua) && $xua[0] === true): ?>
+    <p style="background-color: #18374c;margin-top: 0px;padding: 10px;"><?=$xua[1];?></p>
     <?php endif; ?>
 
     <h1>Password Reset</h1>
@@ -35,7 +35,7 @@
     
     </form>
 
-    <p class="margin-bottom-zero">Want an invitation code?<br><a href="#" style="color:#f1c40f;">Contact us!</a></p>
+    <p class="margin-bottom-zero">Want an invitation code?<br><a href="#" style="color:#f1c40f;">Contact us</a></p>
 
 </div>
 </div>

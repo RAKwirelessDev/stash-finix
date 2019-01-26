@@ -9,13 +9,13 @@ if (!empty($username) && !empty($password)) {
     if ($basic_auth->login_test($username, $password)) {
         header('Location: https://'.$username.':'.$password.'@'.$_SERVER['HTTP_HOST'].'/files/');
     } else {
-        $xua = true;
+        $xua = [true, 'Authentication Failed'];
     }
 }
 
 if (!empty($_COOKIE['_AUTH_ERROR_'])) {
     if ($_COOKIE['_AUTH_ERROR_'] === 'xAF') {
-        $xua = true;
+        $xua = [true, 'Authentication Failed'];
     } elseif ($_COOKIE['_AUTH_ERROR_'] === 'sAG') {
         header('Location: /files/');
         exit;

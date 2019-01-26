@@ -20,8 +20,8 @@
     <form method="post">
     <div class="box">
     
-    <?php if (isset($xua) && $xua === true): ?>
-    <p style="background-color: #18374c;margin-top: 0px;padding: 10px;">Authentication Failed</p>
+    <?php if (isset($xua) && $xua[0] === true): ?>
+    <p style="background-color: #18374c;margin-top: 0px;padding: 10px;"><?=$xua[1];?></p>
     <?php endif; ?>
 
     <h1>Sign In</h1>
@@ -38,7 +38,7 @@
     
     </form>
 
-    <p class="margin-bottom-zero">Forgot your password? <a href="/reset/" style="color:#f1c40f;">Click Here!</a></p>
+    <p class="margin-bottom-zero">Forgot your password? <a href="/reset/" style="color:#f1c40f;">Reset here</a></p>
 
 </div>
 </div>

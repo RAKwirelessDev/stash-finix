@@ -19,6 +19,8 @@ if (!empty($_COOKIE['_AUTH_ERROR_'])) {
     } elseif ($_COOKIE['_AUTH_ERROR_'] === 'sAG') {
         header('Location: /files/');
         exit;
+    } elseif ($_COOKIE['_AUTH_ERROR_'] === 'sSO') {
+        $xom = [true, 'Session Ended'];
     }
 }
 

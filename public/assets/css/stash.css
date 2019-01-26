@@ -11,6 +11,11 @@ body{
   text-decoration:none;
 }
 
+.btn-group{
+  display: inline-flex;
+  margin: 18px 0px;
+}
+
 .poppins{
   font-family: 'Poppins', sans-serif;
 }
@@ -47,6 +52,14 @@ h1{
   border-radius:4px;
 }
 
+.m-8left{
+  margin-left:8px;
+}
+
+.m-8right{
+  margin-left:8px;
+}
+
 .btn{
   background:#2ecc71;
   width:125px;
@@ -58,7 +71,6 @@ h1{
   cursor:pointer;
   text-decoration:none;
 
-  margin-right: 8px;
   font-weight:800;
   font-size:0.8em;
 }
@@ -78,7 +90,6 @@ h1{
   cursor:pointer;
   text-decoration:none;
 
-  margin-left: 8px;
   font-weight:800;
   font-size:0.8em;
 }

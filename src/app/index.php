@@ -1,7 +1,9 @@
 <?php
 
 if (!empty($_POST['username']) && !empty($_POST['password'])) {
-    header('Location: https://'.$_POST['username'].':'.$_POST['password'].'@stash.rakwireless.com/files/');
+    //header('Location: https://'.$_POST['username'].':'.$_POST['password'].'@stash.rakwireless.com/files/');
+    $url = 'https://'.$_POST['username'].':'.$_POST['password'].'@stash.rakwireless.com/files/';
+    print_r(get_headers($url, 1));
     exit;
 }
 

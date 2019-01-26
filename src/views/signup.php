@@ -19,16 +19,21 @@
 
     <form method="post">
     <div class="box">
+    
+    <?php if (isset($xua) && $xua === true): ?>
+    <p style="background-color: #18374c;margin-top: 0px;padding: 10px;">Authentication Failed</p>
+    <?php endif; ?>
+
     <h1>Stash Sign Up</h1>
 
     <input type="username" name="username" placeholder="Username" class="txt-input poppins">
     
     <input type="password" name="password" placeholder="Password" class="txt-input poppins">
     
-    <button class="btn poppins" type="submit">Sign In</button>
-
-    <a class="btn2 poppins" href="/signup/">Sign Up</a>
-    
+    <div>
+        <button class="btn poppins" type="submit">Sign In</button>
+        <a class="td-none" href="/signup/"><div class="btn2 poppins">Sign Up</div></a>
+    </div>
     </div>
     
     </form>

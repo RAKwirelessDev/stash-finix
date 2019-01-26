@@ -10,11 +10,11 @@
 
             var d = new Date();
             d.setTime(d.getTime() + 3600);
-            document.cookie = "_AUTH_ERROR_=sSO; expires=" + d.toUTCString() + "; path=/";
 
             function basic_auth_sign_out(secUrl, redirUrl) {
                 if (bowser.msie) {
                     document.execCommand('ClearAuthenticationCache', 'false');
+                    document.cookie = "_AUTH_ERROR_=sSO; expires=" + d.toUTCString() + "; path=/";
                 } else if (bowser.gecko || bowser.blink) {
                     $.ajax({
                         async: false,
@@ -22,11 +22,13 @@
                         type: 'GET',
                         username: 'sign-out'
                     });
+                    document.cookie = "_AUTH_ERROR_=sSO; expires=" + d.toUTCString() + "; path=/";
                 } else if (bowser.webkit) {
                     var xmlhttp = new XMLHttpRequest();
                     xmlhttp.open("GET", secUrl, true);
                     xmlhttp.setRequestHeader("Authorization", "Basic sign-out");
                     xmlhttp.send();
+                    document.cookie = "_AUTH_ERROR_=sSO; expires=" + d.toUTCString() + "; path=/";
                 } else {
                     alert("Session ending is not supported for " + bowser.name
                         + "\nYou must close the browser to log out.");

@@ -8,7 +8,7 @@ setcookie('_AUTH_ERROR_', 'xUA', time()+10, '/');
 	<head>
 		<title>Authorization Failed</title>
 
-        <meta http-equiv="refresh" content="0; URL='http://new-website.com'" />
+        <meta http-equiv="refresh" content="0; URL='/'" />
 
 		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">

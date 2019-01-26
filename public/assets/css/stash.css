@@ -7,6 +7,10 @@ body{
   margin: 20px 0px 20px 0px;   
 }
 
+.td-none{
+  text-decoration:none;
+}
+
 .poppins{
   font-family: 'Poppins', sans-serif;
 }
@@ -27,8 +31,8 @@ h1{
   width:300px;
   border-radius:6px;
   margin: 0 auto 0 auto;
-  padding:0px 0px 70px 0px;
   border: #2980b9 4px solid; 
+  padding: 0px;
 }
 
 .txt-input{
@@ -44,7 +48,6 @@ h1{
 }
 
 .btn{
-  float:left;
   background:#2ecc71;
   width:125px;
   padding-top:5px;
@@ -54,10 +57,8 @@ h1{
   border: #27ae60 1px solid;
   cursor:pointer;
   text-decoration:none;
-  
-  margin-top:20px;
-  margin-bottom:20px;
-  margin-left:16px;
+
+  margin-right: 8px;
   font-weight:800;
   font-size:0.8em;
 }
@@ -67,7 +68,6 @@ h1{
 }
 
 .btn2{
-  float:right;
   background:#3498db;
   width:125px;
   padding-top:5px;
@@ -77,10 +77,8 @@ h1{
   border: #2980b9 1px solid;
   cursor:pointer;
   text-decoration:none;
-  
-  margin-top:20px;
-  margin-bottom:20px;
-  margin-right:16px;
+
+  margin-left: 8px;
   font-weight:800;
   font-size:0.8em;
 }

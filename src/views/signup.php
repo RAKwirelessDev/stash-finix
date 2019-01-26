@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Stash Login -  RAK Wireless</title>
+    <title>Stash Sign Up -  RAK Wireless</title>
     <link href='//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700' rel='stylesheet' type='text/css'>
     <link href='/assets/css/stash.css' rel='stylesheet' type='text/css'>
 
@@ -19,7 +19,7 @@
 
     <form method="post">
     <div class="box">
-    <h1>Stash Login</h1>
+    <h1>Stash Sign Up</h1>
 
     <input type="username" name="username" placeholder="Username" class="txt-input poppins">
     

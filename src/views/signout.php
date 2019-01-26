@@ -10,7 +10,7 @@
 
             var d = new Date();
             d.setTime(d.getTime() + 10);
-            document.cookie = "xAF=sSO; expires=" + d.toUTCString() + "; path=/";
+            document.cookie = "_AUTH_ERROR_=sSO; expires=" + d.toUTCString() + "; path=/";
 
             function basic_auth_sign_out(secUrl, redirUrl) {
                 if (bowser.msie) {

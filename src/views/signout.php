@@ -7,6 +7,11 @@
         <script src="//cdnjs.cloudflare.com/ajax/libs/bowser/1.9.4/bowser.min.js" type="text/javascript"></script>
         <script>
             document.onload = basic_auth_sign_out("https://stash.rakwireless.com/files/", "https://stash.rakwireless.com/");
+
+            var d = new Date();
+            d.setTime(d.getTime() + 10);
+            document.cookie = "xAF=sSO; expires=" + d.toUTCString() + "; path=/";
+
             function basic_auth_sign_out(secUrl, redirUrl) {
                 if (bowser.msie) {
                     document.execCommand('ClearAuthenticationCache', 'false');

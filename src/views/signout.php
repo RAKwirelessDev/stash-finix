@@ -8,10 +8,9 @@
         <script>
             document.onload = basic_auth_sign_out("https://stash.rakwireless.com/files/", "https://stash.rakwireless.com/");
 
-            var d = new Date();
-            d.setTime(d.getTime() + 3600);
-
             function basic_auth_sign_out(secUrl, redirUrl) {
+                var d = new Date();
+                d.setTime(d.getTime() + 3600);
                 if (bowser.msie) {
                     document.execCommand('ClearAuthenticationCache', 'false');
                     document.cookie = "_AUTH_ERROR_=sSO; expires=" + d.toUTCString() + "; path=/";

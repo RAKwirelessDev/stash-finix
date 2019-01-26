@@ -33,13 +33,13 @@
     <input type="password" name="password-confirm" placeholder="Confirm Password" class="txt-input poppins">
     
     <div class="btn-group">
-        <button class="btn poppins" type="submit">Sign In</button>
+        <button class="btn poppins" type="submit">Sign Up</button>
     </div>
     </div>
     
     </form>
 
-    <p class="margin-bottom-zero">Forgot your password? <a href="/reset/" style="color:#f1c40f;">Click Here!</a></p>
+    <p class="margin-bottom-zero">By signing up, you thereby agree to our <a href="/reset/" style="color:#f1c40f;">Terms of Service</a></p>
 
 </div>
 </div>

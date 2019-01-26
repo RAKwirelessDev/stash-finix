@@ -7,7 +7,7 @@ if (!empty($_POST['username']) && !empty($_POST['password'])) {
 
 if (!empty($_COOKIE['_AUTH_ERROR_'])) {
     if ($_COOKIE['_AUTH_ERROR_'] === 'xUA') {
-        echo "Unauthorized Access";
+        $xua = true;
     }
 }
 

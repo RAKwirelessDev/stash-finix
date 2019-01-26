@@ -19,6 +19,11 @@
 
     <form method="post">
     <div class="box">
+    
+    <?php if (isset($xua) && $xua === true): ?>
+    <p style="background-color: #18374c;margin-top: 0px;padding: 10px;">Authentication Failed</p>
+    <?php endif; ?>
+
     <h1>Stash Login</h1>
 
     <input type="username" name="username" placeholder="Username" class="txt-input poppins">

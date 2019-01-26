@@ -6,7 +6,7 @@ $password = $_POST['password'];
 if (!empty($username) && !empty($password)) {
     $basic_auth->add_user('admin', 'admin');
     if ($basic_auth->login_test($username, $password)) {
-        header('Location: https://'.$username.':'.$password.'@stash.rakwireless.com/files/');
+        header('Location: https://'.$username.':'.$password.'@'.$_SERVER['HTTP_HOST'].'/files/');
     } else {
         $xua = true;
     }

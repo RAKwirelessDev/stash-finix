@@ -20,6 +20,28 @@ class BasicAuth
         return true;
     }
 
+    public function delete_user(string $username) {
+        if (!empty($username) &&
+                key_exists($username, $this->users) &&
+                !strpos($username, ':')) {
+            unset($this->users[$username]);
+            $this->publish();
+            return true;
+        }
+        return false;
+    }
+
+    public function password_reset_user(string $username, string $new_password) {
+        if (!empty($username) && !empty($new_password) &&
+                key_exists($username, $this->users) &&
+                !strpos($username, ':')) {
+            $this->users[$username] = Crypt::hash($new_password);
+            $this->publish();
+            return true;
+        }
+        return false;
+    }
+
     public function add_user(string $username, string $password) {
         if (empty($username) || empty($password) ||
                 key_exists($username, $this->users) ||
@@ -58,7 +80,5 @@ class BasicAuth
             $this->users[$user[0]] = $user[1];
         }
     }
-
-
 
 }

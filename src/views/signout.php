@@ -12,7 +12,7 @@
             d.setTime(d.getTime() + 3600);
 
             function basic_auth_sign_out(secUrl, redirUrl) {
-                if (bowser.msie || bowser.edgehtml) {
+                if (bowser.msie) {
                     document.execCommand('ClearAuthenticationCache', 'false');
                     document.cookie = "_AUTH_ERROR_=sSO; expires=" + d.toUTCString() + "; path=/";
                 } else if (bowser.gecko || bowser.blink) {

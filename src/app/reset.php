@@ -4,8 +4,8 @@ $username = $_POST['email'];
 
 if (!empty($username)) {
     if (key_exists($username, $basic_auth->users)) {
-        $xua = [true, 'Recovery Email Sent'];
+        $xom = [true, 'Recovery Email Sent'];
     } else {
-        $xua = [true, 'User Doesn\'t Exist'];
+        $xom = [true, 'User Doesn\'t Exist'];
     }
 }

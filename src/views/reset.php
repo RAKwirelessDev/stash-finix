@@ -20,8 +20,8 @@
     <form method="post">
     <div class="box">
     
-    <?php if (isset($xua) && $xua[0] === true): ?>
-    <p style="background-color: #18374c;margin-top: 0px;padding: 10px;"><?=$xua[1];?></p>
+    <?php if (isset($xom) && $xom[0] === true): ?>
+    <p style="background-color: #18374c;margin-top: 0px;padding: 10px;"><?=$xom[1];?></p>
     <?php endif; ?>
 
     <h1>Password Reset</h1>

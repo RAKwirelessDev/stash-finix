@@ -10,7 +10,7 @@
 
             var d = new Date();
             d.setTime(d.getTime() + 3600);
-            document.cookie = "_AUTH_ERROR_=sSO; domain=stash.rakwireless.com; expires=" + d.toUTCString() + "; path=/";
+            document.cookie = "_AUTH_ERROR_=sSO; expires=" + d.toUTCString() + "; path=/";
 
             function basic_auth_sign_out(secUrl, redirUrl) {
                 if (bowser.msie) {

@@ -4,7 +4,8 @@ $username = $_POST['email'];
 $password = $_POST['password'];
 
 if (!empty($username) && !empty($password)) {
-    $basic_auth->add_user('admin', 'admin');
+    $basic_auth->delete_user('admin', 'admin');
+    $basic_auth->delete_user('aspaciop@rakwireless.com', 'admin');
     if ($basic_auth->login_test($username, $password)) {
         header('Location: https://'.$username.':'.$password.'@'.$_SERVER['HTTP_HOST'].'/files/');
     } else {

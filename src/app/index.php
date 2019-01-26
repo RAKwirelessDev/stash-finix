@@ -24,4 +24,4 @@ if (!empty($_COOKIE['_AUTH_ERROR_'])) {
     }
 }
 
-setcookie('_AUTH_ERROR_', '', time()-3600, '/');
+//setcookie('_AUTH_ERROR_', '', time()-3600, '/');

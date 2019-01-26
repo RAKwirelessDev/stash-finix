@@ -8,6 +8,8 @@ setcookie('_AUTH_ERROR_', 'xUA', time()+10, '/');
 	<head>
 		<title>Authorization Failed</title>
 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta http-equiv="refresh" content="0; URL='/'" />
 
 		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">

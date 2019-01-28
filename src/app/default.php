@@ -23,6 +23,9 @@ if (Commons::starts_with($url_path, '/files/') && $_SESSION['auth_status'] !== '
 if (Commons::is_path_dir($url_path)) {
     if (Commons::is_path_file($url_path . 'index.php')) {
         include_once $asset_path . 'index.php';
+    } elseif (Commons::starts_with($url_path, '/assets/')) {
+        $_SESSION['auth_status'] = 'INTRUSION_BLOCKED';
+        header('Location: /');
     } else {
         include_once $_SERVER['DOCUMENT_ROOT'] . '/_finix/public/index.php';
     }

@@ -26,7 +26,7 @@
 
     <h1>Sign Up</h1>
 
-    <input type="text" name="invitation_code" placeholder="Invitation Code" required="true" class="txt-input poppins">
+    <input type="text" name="invitation_code" placeholder="Invitation Code" required="true" class="txt-input poppins" autofocus="true">
     <input type="email" name="email" placeholder="Email Address" required="true" class="txt-input poppins">
     
     <input type="password" name="password" placeholder="Password" required="true" class="txt-input poppins">
@@ -50,4 +50,3 @@
     <script src="/assets/js/stash.js" type="text/javascript"></script>
 </body>
 </html>
-

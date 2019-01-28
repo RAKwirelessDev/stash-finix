@@ -7,7 +7,7 @@ spl_autoload_register(
         if (is_readable($file)) {
             require_once($file);
         } else {
-            throw new \Exception("Undefined Class: \"$class_name\".");
+            //throw new \Exception("Undefined Class: \"$class_name\".");
         }
     }
 );

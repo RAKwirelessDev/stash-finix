@@ -6,5 +6,5 @@ const _ROUTES_ = [
     '/reset/' => 'reset.php',
     '/signout/' => 'signout.php',
 
-    '{PAGE_NOT_FOUND}' => 'error-404.php'
+    '{DEFAULT}' => 'default.php'
 ];

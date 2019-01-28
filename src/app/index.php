@@ -1,27 +1,22 @@
 <?php
 
+session_start();
+
 $username = $_POST['email'];
 $password = $_POST['password'];
 
 if (!empty($username) && !empty($password)) {
-    $basic_auth->delete_user('admin', 'admin');
     $basic_auth->add_user('aspaciop@rakwireless.com', 'admin');
+    $_SESSION['auth_email'] = $username;
+    $_SESSION['auth_password'] = $password;
     if ($basic_auth->login_test($username, $password)) {
-        header('Location: https://'.$username.':'.$password.'@'.$_SERVER['HTTP_HOST'].'/files/?_finix');
+        $_SESSION['auth_status'] = 'ACTIVE';
     } else {
-        $xom = [true, 'Authentication Failed'];
+        $_SESSION['auth_status'] = 'AUTH_FAILED';
     }
 }
 
-if (!empty($_COOKIE['_AUTH_ERROR_'])) {
-    if ($_COOKIE['_AUTH_ERROR_'] === 'xAF') {
-        $xom = [true, 'Basic Authentication Failed'];
-    } elseif ($_COOKIE['_AUTH_ERROR_'] === 'sAG') {
-        header('Location: /files/');
-        exit;
-    } elseif ($_COOKIE['_AUTH_ERROR_'] === 'sSO') {
-        $xom = [true, 'Session Ended'];
-    }
+if ($_SESSION['auth_status'] === 'ACTIVE') {
+    header('Location: /files/');
+    exit;
 }
-
-setcookie('_AUTH_ERROR_', '', time()-3600, '/');

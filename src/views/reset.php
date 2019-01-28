@@ -26,7 +26,7 @@
 
     <h1>Password Reset</h1>
 
-    <input type="email" name="email" placeholder="Email Address" required="true" class="txt-input poppins">
+    <input type="email" name="email" placeholder="Email Address" required="true" class="txt-input poppins" autofocus="true">
     
     <div class="btn-group">
         <button class="btn poppins" type="submit">Reset</button>
@@ -45,4 +45,3 @@
     <script src="/assets/js/stash.js" type="text/javascript"></script>
 </body>
 </html>
-

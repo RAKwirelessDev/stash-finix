@@ -20,15 +20,19 @@
     <form method="post">
     <div class="box">
     
-    <?php if (isset($xom) && $xom[0] === true): ?>
-    <p style="background-color: #18374c;margin-top: 0px;padding: 10px;"><?=$xom[1];?></p>
+    <?php if ($_SESSION['auth_status'] === 'AUTH_FAILED'): ?>
+    <p style="background-color: #18374c;margin-top: 0px;padding: 10px;">Authentication Failed</p>
+    <?php elseif ($_SESSION['auth_status'] === 'AUTH_REQUIRED'): ?>
+    <p style="background-color: #18374c;margin-top: 0px;padding: 10px;">Authentication Required</p>
+    <?php elseif ($_SESSION['auth_status'] === 'INTRUSION_BLOCKED'): ?>
+    <p style="background-color: #18374c;margin-top: 0px;padding: 10px;">System Intrusion Blocked</p>
     <?php endif; ?>
 
     <h1>Sign In</h1>
 
-    <input type="email" name="email" placeholder="Email Address" required="true" class="txt-input poppins">
+    <input type="email" name="email" placeholder="Email Address" required="true" class="txt-input poppins"<?=(!empty($_SESSION['auth_email'])?' value="'.htmlspecialchars($_SESSION['auth_email']).'"':' autofocus="true"')?>>
     
-    <input type="password" name="password" placeholder="Password" required="true" class="txt-input poppins">
+    <input type="password" name="password" placeholder="Password" required="true" class="txt-input poppins"<?=(!empty($_SESSION['auth_email'])?' autofocus="true"':'')?>>
     
     <div class="btn-group">
         <button class="btn poppins m-8right" type="submit">Sign In</button>
@@ -49,3 +53,8 @@
 </body>
 </html>
 
+<?php
+if ($_SESSION['auth_status'] !== 'ACTIVE'):
+    session_unset();
+endif;
+?>

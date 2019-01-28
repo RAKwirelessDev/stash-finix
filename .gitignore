@@ -1,3 +1,4 @@
 public/files/*
 !public/files/.empty
 .htpasswd
+.htaccess

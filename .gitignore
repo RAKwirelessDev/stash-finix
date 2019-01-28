@@ -1,3 +1,8 @@
+!public/files/.empty
+public/_finix/private/cache/*
+!public/_finix/private/cache/.empty
+public/_finix/public/cache/*
+!public/_finix/public/cache/.empty
 public/files/*
 !public/files/.empty
 .htpasswd

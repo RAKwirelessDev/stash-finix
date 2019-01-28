@@ -26,6 +26,8 @@
     <p style="background-color: #18374c;margin-top: 0px;padding: 10px;">Authentication Required</p>
     <?php elseif ($_SESSION['auth_status'] === 'INTRUSION_BLOCKED'): ?>
     <p style="background-color: #18374c;margin-top: 0px;padding: 10px;">System Intrusion Blocked</p>
+    <?php elseif ($_SESSION['auth_status'] === 'AUTH_END'): ?>
+    <p style="background-color: #18374c;margin-top: 0px;padding: 10px;">Session Terminated</p>
     <?php endif; ?>
 
     <h1>Sign In</h1>

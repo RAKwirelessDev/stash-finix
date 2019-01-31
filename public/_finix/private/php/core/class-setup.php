@@ -103,6 +103,7 @@ class Setup {
 
         $this->set('PUBLIC_HREF', Util::normalize_path($this->get('finix_HREF') . '/' . $this->get('FILE_PREFIX') . '/public/', true));
         $this->set('PUBLIC_PATH', Util::normalize_path($this->get('finix_PATH') . '/public/', false));
+        echo $this->get('PUBLIC_HREF');exit;
 
         $this->set('INDEX_HREF', Util::normalize_path($this->get('PUBLIC_HREF') . '/index.php', false));
         $this->set('CACHE_PUB_HREF', Util::normalize_path($this->get('PUBLIC_HREF') . '/cache', true));

@@ -103,7 +103,6 @@ class Setup {
 
         $this->set('PUBLIC_HREF', Util::normalize_path($this->get('finix_HREF') . '/' . $this->get('FILE_PREFIX') . '/public/', true));
         $this->set('PUBLIC_PATH', Util::normalize_path($this->get('finix_PATH') . '/public/', false));
-        print_r($this->store);exit;
 
         $this->set('INDEX_HREF', Util::normalize_path($this->get('PUBLIC_HREF') . '/index.php', false));
         $this->set('CACHE_PUB_HREF', Util::normalize_path($this->get('PUBLIC_HREF') . '/cache', true));
@@ -114,6 +113,7 @@ class Setup {
         $this->set('CONF_PATH', Util::normalize_path($this->get('PRIVATE_PATH') . '/conf', false));
         $this->set('CACHE_PRV_PATH', Util::normalize_path($this->get('PRIVATE_PATH') . '/cache', false));
         $this->set('HAS_WRITABLE_CACHE_PRV', @is_writable($this->get('CACHE_PRV_PATH')));
+        print_r($this->store);exit;
     }
 
     private function add_sys_cmd_checks() {

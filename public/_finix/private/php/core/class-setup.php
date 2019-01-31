@@ -101,7 +101,7 @@ class Setup {
         $this->set('ROOT_HREF', Util::normalize_path(dirname($this->get('finix_HREF')), true));
         $this->set('ROOT_PATH', Util::normalize_path(dirname($this->get('finix_PATH')), false));
 
-        $this->set('PUBLIC_HREF', Util::normalize_path('/' . $this->get('FILE_PREFIX') . '/public/', true));
+        $this->set('PUBLIC_HREF', Util::normalize_path($this->get('FILE_PREFIX') . '/public/', true));
         $this->set('PUBLIC_PATH', Util::normalize_path($this->get('finix_PATH') . '/public/', false));
         echo $this->get('PUBLIC_HREF');exit;
 

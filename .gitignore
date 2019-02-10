@@ -8,3 +8,4 @@ public/files/*
 .htpasswd
 .htaccess
 *.old
+.htkeys

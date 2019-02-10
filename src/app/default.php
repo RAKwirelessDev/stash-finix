@@ -1,7 +1,5 @@
 <?php
 
-session_start();
-
 use Core\Commons;
 use Core\AssetRender;
 

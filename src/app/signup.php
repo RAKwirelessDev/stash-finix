@@ -5,8 +5,6 @@ $username = $_POST['email'];
 $password = $_POST['password'];
 $password_confirm = $_POST['password_confirm'];
 
-//echo (int)!empty($invitation_code);exit;
-
 if (!empty($invitation_code) && !empty($username) && !empty($password) && !empty($password_confirm)) {
     if ($access_keys->key_check($invitation_code)) {
         if ($password === $password_confirm) {

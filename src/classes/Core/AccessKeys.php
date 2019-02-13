@@ -21,9 +21,18 @@ class AccessKeys
     }
 
     public function delete_key(string $key) {
-        if (!empty($key) && in_array($key, $this->keys)) {
-            unset($this->keys[array_search($key, $this->keys)]);
+        $search = array_search(trim($key), $this->keys);
+        if ($search !== false && !empty($key)) {
+            unset($this->keys[$search]);
+            // $this->keys = array_values($this->keys);
             $this->publish();
+            return true;
+        }
+        return false;
+    }
+
+    public function key_check(string $key) {
+        if (in_array($key, $this->keys)) {
             return true;
         }
         return false;
@@ -43,7 +52,7 @@ class AccessKeys
         $keys = explode("\n", $data);
         foreach ($keys as $key) {
             if (!empty($key)) {
-                $this->keys[] = $key;
+                $this->keys[] = trim($key);
             }
         }
     }

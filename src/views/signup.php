@@ -20,8 +20,10 @@
     <form method="post">
     <div class="box">
     
-    <?php if (isset($xom) && $xom[0] === true): ?>
-    <p style="background-color: #18374c;margin-top: 0px;padding: 10px;"><?=$xom[1];?></p>
+    <?php if ($_SESSION['auth_status'] === 'XCODE_INVALID'): ?>
+    <p style="background-color: #18374c;margin-top: 0px;padding: 10px;">Invitation Code Invalid</p>
+    <?php elseif ($_SESSION['auth_status'] === 'PASSWD_CONF_ERR'): ?>
+    <p style="background-color: #18374c;margin-top: 0px;padding: 10px;">Password Confirmation Mismatch</p>
     <?php endif; ?>
 
     <h1>Sign Up</h1>
